@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhap so nguyen to can in ra:");
+    let interger = 2;
+    let count = 0;
+    while (interger > 0) {
+        if (total(interger)) {
+            document.write("so nguyen to la: " + interger + "<br>");
+            count++;
+            if (count == number) {
+                break;
+            }
+        }
+        interger++;
+    }
+
+    function total(interger) {
+        for (let i = 2; i <= interger / 2; i++) {
+            if (interger % i == 0) {
+                return false;
+
+            }
+
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
