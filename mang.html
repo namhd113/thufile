@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body></body>
+</html>
+<script>
+    var one = 1;
+    var two = 2;
+    var str = "abc";
+    var mang = [one, two, str];
+    console.log(mang);
+</script>
+<script>
+    var array = [1,2,5,4,7,9,4,2,4,6,7,5,7,4,7,3,2,6,8];
+    // 1: Cho biết tổng của phần tử thứ 2, 4, 6, 8;
+    var total = array[2] + array[4] + array[6] + array[8];
+    // 2: Tính tổng các phần tử trong mảng
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    // 3: Tính tổng các số chẵn trong mảng
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] % 2 == 0){
+            total += array[i];
+        }
+    }
+    // 4: Tìm giá trị lớn nhất, nhỏ nhất, trung bình cộng trong mảng
+    var max = array[0];
+    var min = array[0];
+    var average = 0;
+    var total = 0;
+    for (let i = 0; i < array.length; i++) {
+        if(max < array[i]){
+            max = array[i];
+        }
+        if(min > array[i]){
+            min = array[i];
+        }
+        total += array[i];
+    }
+    average = total/array.length;
+</script>
+
+
+
+
+
+
+
