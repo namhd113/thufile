@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhap vao Ho va Ten");
+    let b =+ (prompt("Nhap diem toan"));
+     let c =+ (prompt("Nhap diem ly"));
+     let d =+ (prompt("Nhap diem hoa"));
+    let e = (b+c+d) / 3;
+    if (e > 9 ) {
+        alert('Hoc sinh dat danh hieu suat xac');
+    } else if(e >= 9 && e >= 8) {
+        alert('Hoc sinh dat danh hieu hoc sinh gioi');
+    } else if (e > 8 && e >=6.5 ) {
+        alert('Hoc sinh dat danh hieu hoc sinh kha');
+    } else if(e<6,5 && e>=5) {
+        alert('Hoc sinh dat danh hieu hoc sinh trung binh');
+    } else if(e <5 && e>= 3) {
+        alert(a + 'Hoc sinh dat dat danh hieu yeu');
+    } else {
+        alert('Hoc sinh kem');
+     }
+</script>
+</body>
+</html>

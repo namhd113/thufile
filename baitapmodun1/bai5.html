@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let km =+ (prompt("Nhap so km "));
+    let tong = 0;
+    function matTien () {
+        if (km < 0) {
+            alert("Vui long nhap so km hop le")
+        } else if (km == 0) {
+            alert("So tien ban phai tra la 0 VND")
+        } else if (km <=1) {
+            alert("So tien ban phai tra la 15000 VND")
+        } else if (km => 2 && km <= 5) {
+            tong = 15000 + 13000 * (km - 1);
+            alert("So tien phao tra la " + tong);
+        } else if (km >5 && km <=120) {
+            tong = 15000 + 13000 * 4 + 11000 * (km-5);
+            alert("So tien phai tra la " + tong);
+        } else if (km > 120) {
+            tong = (15000 + 13000 * 4 + 11000 * (km-5))*0.9;
+            alert("So tien phao tra la " + tong);
+        }
+
+
+    }
+matTien(km);
+</script>
+</body>
+</html>

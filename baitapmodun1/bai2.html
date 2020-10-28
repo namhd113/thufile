@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 2.Nhập vào số nguyên có 3 chữ số, tính tổng 3 chữ số đó.
+    function sum(s) {
+        let a = parseInt(s / 100);
+        let b = parseInt(s % 100 / 10);
+        let c = parseInt((s % 100) % 10);
+        return (a + b + c)
+    }document.write(sum(s))
+</script>
+</body>
+</html>

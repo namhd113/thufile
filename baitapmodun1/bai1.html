@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +(prompt("Nhap so tiền vào đây"));
+    function demTien(money){
+        a =Math.floor(money/10);
+        b =Math.floor((money %10)/5);
+        c =Math.floor((money%5)/2);
+        d =(money % 2);
+        document.write(a + "Tờ 10k" +"<br>"+ b + "Tờ 5k" +"<br>"+ c + "Tờ 2k" +"<br>"+ d + "Tờ 1k");
+    }
+    demTien(money);
+</script>
+</body>
+</html>
