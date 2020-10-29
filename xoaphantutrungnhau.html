@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nó kìa</title>
+    <script src="mobile.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var a = [ '1', '2', '3', '3' ],
+        b = [ '6', '5', '3', '4' ],
+        a_ = [],
+        b_ = [];
+    a.forEach((item_a, index_a) => {
+        if (b.indexOf(item_a) == -1) {
+            a_.push(item_a);
+        }
+    });
+    b.forEach((item_b, index_b) => {
+        if (a.indexOf(item_b) == -1) {
+            b_.push(item_b);
+        }
+    });
+
+    console.log(a_);
+    console.log(b_);
+
+</script>
+</body>
+</html>
